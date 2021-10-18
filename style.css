@@ -1,0 +1,98 @@
+body {
+	background-color:  yellow;
+	color: rgb(30,15,30);
+	font-size:  30px;
+	text-justify:  justify;
+}
+
+h1, h2, h3 {
+  font-family: "Helvetica", sans-serif; /* if all headers use Helvetica */
+}
+
+h1 {
+	color: red;
+	font-weight:  100;
+	font-size:  50px;
+}
+
+a {
+  color: red;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: darkblue;
+  text-decoration: none;
+}
+
+.img-circle { /* select all elements with the class="img-circle" */
+  border-radius: 60%;
+}
+
+.img-center {
+	display: block;
+	margin-left:  auto;
+	margin-right: auto;
+}
+
+#leader {
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.9);
+}
+
+.card-white {
+	background: white;                         /* White background */
+	padding: 30px;                             /* Internal space */
+	border-radius: 4px;                        /* Small radius */
+	box-shadow: 0 10px 30px rgba(0,0,0,.1);    /* Light shadow */
+	width: 700px;     /* Fix the width first*/
+	margin: 30px auto; /* Let CSS compute the same left & right margins automatically*/
+	border-top: 1px solid rgba(0, 0, 0, 0.1); /* elegant border: thin and subtle */
+	text-align:  center;
+}
+
+.list-inline {
+  list-style: none; /* kill the bullet points */
+  padding-left: 0px; /* kill remaining padding left */
+}
+.list-inline > li {
+  display: inline; /* change list item behavior to inline */
+  padding: 0px 20px; /* add som left/right padding between list items */
+}
+
+.btn-blue {
+	background-color:  #6B72E1;
+	color: white;
+	padding:  15px 20px;
+	border-radius: 4px;
+}
+
+.btn-blue:hover {
+	background-color:  black;
+	color: white;
+
+}
+
+
+.container {
+  width: 600px; /* set the width of your container */
+  margin: 40px auto; /* set margins: top/bottom: 40px; left/right: automatic */
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 700px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 500px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
